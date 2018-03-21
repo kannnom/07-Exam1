@@ -92,6 +92,8 @@ def problem3(rect, n, window):
       :type n:       int
       :type window:  rg.RoseWindow
     """
+    rect(n)
+
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function, TESTING each step as you go.
     #          Tests have been written for you (above).
