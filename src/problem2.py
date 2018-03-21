@@ -114,11 +114,12 @@ def problem2(line1, line2, thickness, win):
       :type thickness:  int
       :type win:        rg.RoseWindow
     """
-
-    line1.pen = rg.Pen('line1.color', thickness)
-    line2.pen = rg.Pen('line2.color', thickness)
-
-    rg.Rectangle(line1.center_point)
+    line1.attach_to(win)
+    line2.attach_to(win)
+    rec = rg.Rectangle(rg.Point((line1.start.x+line1.end.x)/2,(line1.start.y+line1.end.y)/2),rg.Point((line2.start.x+line2.end.x)/2,(line2.start.y+line2.end.y)/2))
+    rec.outline_thickness = thickness
+    rec.outline_color = line1.color
+    rec.attach_to(win)
 
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function, TESTING each step as you go.
