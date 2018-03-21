@@ -285,7 +285,7 @@ def problem1b(r):
         if product_of_digits(r+k) <= r:
             sum += r+k
     return sum
-    
+
     # -------------------------------------------------------------------------
     # DONE: 5. Implement and test this function.
     #          See the IMPORTANT NOTE just before the DEF above.

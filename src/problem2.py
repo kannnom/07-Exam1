@@ -114,15 +114,11 @@ def problem2(line1, line2, thickness, win):
       :type thickness:  int
       :type win:        rg.RoseWindow
     """
-    window = win
+
     line1.pen = rg.Pen('line1.color', thickness)
     line2.pen = rg.Pen('line2.color', thickness)
-    rg.Rectangle(line1.rg)
 
-    window.close_on_mouse_click()
-
-
-   # rg.Rectangle(line1(rg.Point()))
+    rg.Rectangle(line1.center_point)
 
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function, TESTING each step as you go.
